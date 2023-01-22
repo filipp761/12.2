@@ -21,6 +21,7 @@ JOIN address a on s.address_id=a.address_id
 GROUP by c.store_id, s.first_name, s.last_name, address
 HAVING Покупатели > 300
 ```
+![alt text](https://github.com/filipp761/12.4/blob/main/img/1.jpg)
 
 ## Задание 2.
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
