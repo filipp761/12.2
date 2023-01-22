@@ -33,7 +33,7 @@ SELECT COUNT(*) as COUNT_FILM
 FROM film f
 WHERE lenght > (SELECT AVG('lenght') FROM film)
 ```
-
+![alt text](https://github.com/filipp761/12.4/blob/main/img/2.jpg)
 ## Задание 3
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
 ____
@@ -50,7 +50,7 @@ GROUP BY MONTH(payment_date), YEAR(payment_date)
 ORDER BY SUM(amount) DESC
 limit 1
 ```
-
+![alt text](https://github.com/filipp761/12.4/blob/main/img/3.jpg)
 # Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
 
@@ -69,7 +69,7 @@ END as 'Премия'
 FROM payment p
 GROUP by staff_id
 ```
-
+![alt text](https://github.com/filipp761/12.4/blob/main/img/4.jpg)
 ## Задание 5*
 Найдите фильмы, которые ни разу не брали в аренду.
 ____
@@ -80,4 +80,4 @@ SELECT title FROM inventory i
 RIGHT JOIN film f ON i.film_id=f.film_id
 WHERE inventory_id IS NULL
 ```
-
+![alt text](https://github.com/filipp761/12.4/blob/main/img/5.jpg)
